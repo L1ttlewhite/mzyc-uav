@@ -34,7 +34,7 @@ VINS-RGBD的依赖可以按照其官方主页[VINS-RGBD](https://github.com/STAR
 
 观察rviz的运行结果，在右侧有点云输出，则为成功。如下图所示。
 
-![VINS-RGBD运行结果](fig/VINS-RGBD.png "VINS-RGBD运行结果")
+![VINS-RGBD运行结果](https://github.com/L1ttlewhite/mzyc-uav/blob/master/TX2%E5%AE%89%E8%A3%85%E5%90%8E%E6%B5%8B%E8%AF%95/fig/VINS-RGBD.png "VINS-RGBD运行结果")
 
 如果右侧没有点云输出，则环境安装失败，按照经验主要是**Eigen3**的原因，需重新编译Eigen3后，全部重新编译。
 
@@ -46,11 +46,11 @@ VINS-RGBD的依赖可以按照其官方主页[VINS-RGBD](https://github.com/STAR
 
 正确的运行结果如下：
 
-![realsense正确结果](fig/realsense正确.png "realsense正确结果")
+![realsense正确结果](https://github.com/L1ttlewhite/mzyc-uav/blob/master/TX2%E5%AE%89%E8%A3%85%E5%90%8E%E6%B5%8B%E8%AF%95/fig/realsense正确.png "realsense正确结果")
 
 常见的问题为会显示`uvc-data`的报错。如下图所示。需要重新安装`librealsense`，按照经验不推荐使用源码安装，使用`apt-get`的方式进行安装，参考[librealsense-linux-distribution](https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md)
 
-![realsense错误结果](fig/uvc-metadata.png "uvc-metadata报错" )
+![realsense错误结果](https://github.com/L1ttlewhite/mzyc-uav/blob/master/TX2%E5%AE%89%E8%A3%85%E5%90%8E%E6%B5%8B%E8%AF%95/fig/uvc-metadata.png "uvc-metadata报错" )
 
 以上测试完后，将此目录下的`realsense_color_config.yaml`替换`VINS-RGBD/config/realsense`目录下的原有文件，启动VINS-RGBD：
 
