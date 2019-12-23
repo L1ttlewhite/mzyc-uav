@@ -45,7 +45,7 @@ cd ..
 catkin_make
 ```
 
-编译完成后，在启动了t265相机的情况下，终端运行：
+编译完成后，**关闭所有其他结点，这条命令将启动所有节点**，直接运行无人机室内定位，终端运行：
 
 `roslaunch vision_to_mavros t265_all_nodes.launch`
 
